@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modem - Tubes Jaringan Komputer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -42,66 +43,134 @@
             text-decoration: none;
         }
         a:hover {
-            text-decoration: underline;
+            text-decoration: underline;   
         }
+        html {
+        scroll-behavior: smooth;
+        }
+        .profile-image {
+        transition: transform 0.3s ease-in-out;
+        }
+        .profile-image:hover {
+        transform: scale(1.2);
+        }
+        .profile-image {
+            transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+            width: 150px;
+            height: 150px;
+        }
+        .profile-image:hover {
+            width: 180px; 
+            height: 180px;
+        }
+            
     </style>
 </head>
 <body>
-    <header>
-        <h1>Modem</h1>
-        <p>Proyek Jaringan Komputer</p>
-    </header>
+    <header class="bg-blue shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+          <h1 class="text-2xl font-bold">Tubes Alpro : Pengertian Modem</h1>
+          <nav>
+            <ul class="flex space-x-6">
+              <li><a href="#pembahasan" class="hover:text-blue-300 transition-colors duration-300">Pembahasan</a></li>
+              <li><a href="#Sejarah" class="hover:text-blue-300 transition-colors duration-300">Sejarah Modem</a></li>
+              <li><a href="#Perkembangan" class="hover:text-blue-300 transition-colors duration-300">Perkembangan Modem</a></li>
+              <li><a href="#CaraKerja" class="hover:text-blue-300 transition-colors duration-300">Cara Kerja Modem</a></li>
+              <li><a href="#Jenis-Jenis" class="hover:text-blue-300 transition-colors duration-300">Jenis-Jenis</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
     <main>
-        <section id="identitas">
-            <h2>Identitas Pembuat</h2>
-            <p>Nama: Muhammad Faiz Abror</p>
-            <p>Mata Kuliah: Jaringan Komputer</p>
-        </section>
+            <section id="identitas" class="mb-8">
+                <h2 class="text-3xl font-semibold mb-4">Identitas Pembuat</h2>
+                <div class="flex items-center space-x-6">
+                    <img src="modem/WhatsApp Image 2024-12-24 at 18.24.27_82edef1f.jpg" alt="Profil" class="w-32 h-32 rounded-full object-cover border-4 border-blue-500 shadow-md transition-transform duration-300 transform hover:scale-110">
+                    <div>
+                        <p><strong>Nama:</strong> Muhammad Faiz Abror</p>
+                        <p><strong>NIM:</strong> 607012400127</p>
+                        <p><strong>Kelas:</strong> D3SI-48-03</p>
+                        <p><strong>Mata Kuliah:</strong> Jaringan Komputer</p>
+                    </div>
+                </div>
+            </section>
 
         <section id="pembahasan">
-            <h2>Pengertian Modem</h2>
+            <h2 class="text-4xl font-bold">Pengertian Modem</h2>
+            <img src="modem/Australian-modems.jpg" alt="">
+            <p><strong>Sumber:</strong>https://en.wikipedia.org/wiki/File:Australian-modems.jpg</p>
             <p>Modem (Modulator-Demodulator) adalah perangkat keras komputer yang mengubah data dari format digital menjadi format yang cocok untuk media transmisi analog, seperti telepon atau radio. Modem bekerja dengan memodulasi sinyal pembawa untuk menyandikan data digital dan mendemodulasi sinyal yang diterima untuk mengembalikan informasi aslinya. Tujuannya adalah menghasilkan sinyal yang mudah ditransmisikan dan di-decode dengan andal. Modem dapat digunakan dengan berbagai jenis transmisi sinyal analog, mulai dari LED hingga radio.</p>
-            <h2>Sejarah Modem</h2>
+        </section>
+        <section id="Sejarah">
+            <h2 class="text-4xl font-bold">Sejarah Modem</h2>
             <p>Modem awal menggunakan suara yang dapat ditransmisikan melalui sistem telepon tradisional. Modem ini memiliki kecepatan 110 hingga 300 bit per detik (bit/s) dan koneksi manual menggunakan handset telepon. Pada 1970-an, kecepatan yang lebih tinggi, seperti 1.200 dan 2.400 bit/s untuk koneksi dial-up serta 4.800 dan 35 kbit/s untuk koneksi sinkron saluran sewaan, mulai tersedia. Memasuki 1980-an, modem dial-up murah dengan kecepatan 1.200 dan 2.400 bit/s semakin populer, bersamaan dengan modem berbasis radio.</p>
-            <h2>Perkembangan Modem Modern</h2>
+        </section>
+        <section id="Perkembangan">
+            <h2 class="text-4xl font-bold">Perkembangan Modem Modern</h2>
             <p>Pada akhir 1990-an, kebutuhan akan kecepatan yang lebih tinggi untuk internet mendorong peralihan dari sistem berbasis suara ke encoding baru melalui kabel TV dan subcarrier telepon. Dengan munculnya ponsel dan smartphone pada 2000-an, teknologi modem berbasis radio berkembang pesat, memungkinkan kecepatan hingga ratusan megabyte per detik. Saat ini, modem menjadi perangkat yang hampir tidak terlihat, terintegrasi dalam berbagai perangkat komputasi bergerak.</p>
-            
+        </section>
+        <section id="CaraKerja">   
+            <h2 class="text-4xl font-bold">Cara Kerja Modem</h2>
+            <p>Modem memiliki peran penting dalam proses modulasi dan demodulasi untuk menghubungkan perangkat dengan jaringan internet. Selain itu, terdapat beberapa langkah lain dalam cara kerja modem yang dijelaskan sebagai berikut: <p>
+
+                <p><strong> Data Generation</strong></p>
+                <p>Data yang akan ditransmisikan dibuat dalam bentuk digital berupa bilangan biner (0 dan 1) oleh sistem komputer.</p>
+                
+                <p><strong>Modulasi</strong></p>
+                <p>Modem mengubah data digital menjadi sinyal analog melalui proses modulasi, sehingga data dapat ditransmisikan melalui saluran internet. Data digital dienkode sebelum dikirimkan.</p>
+                
+                <p><strong>Transmisi</strong></p>
+                <p>Data yang telah dimodulasi ditransmisikan melalui saluran komunikasi ke modem penerima.</p>
+                
+                <p<strong>Demodulasi</strong></p>
+                <p>Setelah data diterima, modem penerima mengubah sinyal analog kembali menjadi data digital yang dapat dipahami oleh komputer.</p>
+                
+                <p><strong>Decoding</strong></p>
+                <p>Data hasil demodulasi dikirimkan ke sistem komputer untuk digunakan lebih lanjut.</p>
+                
+                <p>Dari proses tersebut, modem berfungsi sebagai jembatan dan penerjemah antara perangkat pengguna dengan jaringan internet. Selain itu, terdapat berbagai jenis modem yang umum digunakan, masing-masing dengan karakteristik tertentu.</p>
+                <img src="" alt="">
+        </section> 
+        
+        <section id="Jenis-Jenis">
+
+            <h2 class="text-4xl font-bold">Jenis-Jenis Modem</h2>
             <h3>1. Modem Dial-Up</h3>
             <p>Modem dial-up menggunakan jaringan telepon untuk terhubung ke internet. Modem ini bekerja dengan mengubah sinyal digital menjadi nada analog yang dapat ditransmisikan melalui saluran telepon tradisional. Modem ini populer pada awal perkembangan internet tetapi kini sudah jarang digunakan karena kecepatannya yang rendah, biasanya 56 kbps.</p>
-            <div class="image-placeholder"><img src="modem/th.jpeg" alt=""></div>
+            <div class="image-placeholder"><img src="modem/th.jpeg" alt="" height="auto" width="500"></div>
             <p><strong>Sumber:</strong> https://r.search.yahoo.com/_ylt=AwrOqVc50W5n8743cE.jzbkF;_ylu=c2VjA2ZwLWF0dHJpYgRzbGsDcnVybA--/RV=2/RE=1735344569/RO=11/RU=https%3a%2f%2fwww.usr.com%2fproducts%2f56k-dialup-modem%2f/RK=2/RS=0_UpLtu1cauCoy5cGImm17O7bWU-</p>
 
             <h3>2. Modem DSL (Digital Subscriber Line)</h3>
             <p>Modem DSL menyediakan akses internet melalui saluran telepon tetapi dengan kecepatan yang jauh lebih tinggi dibandingkan dial-up. Tidak seperti dial-up, DSL memungkinkan penggunaan internet dan layanan telepon secara bersamaan. DSL cocok untuk pengguna rumahan dan bisnis kecil.</p>
-            <div class="image-placeholder"><img src="modem/th (1).jpeg" alt=""></div>
+            <div class="image-placeholder"><img src="modem/th (1).jpeg" alt="" height="auto" width="500"></div>
             <p><strong>Sumber:</strong> https://r.search.yahoo.com/_ylt=AwrOqVcJ0m5nuoA3YoCjzbkF;_ylu=c2VjA2ZwLWF0dHJpYgRzbGsDcnVybA--/RV=2/RE=1735344777/RO=11/RU=https%3a%2f%2feu.dlink.com%2fes%2fes%2fproducts%2fdsl-3788-wireless-ac1200-gigabit-vdsl-adsl-modem-router/RK=2/RS=zhW6LjZKGf.4sCe6bvEDuLHc7qY-</p>
 
             <h3>3. Modem Kabel</h3>
             <p>Modem kabel menggunakan kabel koaksial yang sama dengan kabel TV untuk menyediakan akses internet. Modem ini menawarkan kecepatan yang jauh lebih tinggi dibandingkan DSL dan banyak digunakan di area perkotaan dan pinggiran kota.</p>
-            <div class="image-placeholder"></div>
-            <p><strong>Sumber:</strong> Tambahkan sumber gambar di sini.</p>
+            <div class="image-placeholder"><img src="modem/th2.jpeg" alt="" height="auto" width="500"></div>
+            <p><strong>Sumber:</strong> https://r.search.yahoo.com/_ylt=Awr99nc4725nbAQBMZGjzbkF;_ylu=c2VjA2ZwLWF0dHJpYgRzbGsDcnVybA--/RV=2/RE=1735352248/RO=11/RU=https%3a%2f%2fcarisinyal.com%2fjenis-jenis-modem%2f/RK=2/RS=XKiwN.I4pZQTfv9RVfyREOKUars-</p>
 
             <h3>4. Modem Fiber Optik</h3>
             <p>Modem fiber optik mentransmisikan data menggunakan cahaya melalui kabel fiber optik. Modem ini menawarkan kecepatan yang sangat tinggi dan keandalan, sehingga ideal untuk rumah modern dan bisnis yang membutuhkan bandwidth besar.</p>
-            <div class="image-placeholder">[Gambar Modem Fiber Optik]</div>
-            <p><strong>Sumber:</strong> Tambahkan sumber gambar di sini.</p>
+            <div class="image-placeholder"><img src="modem/41OfAWrq4+L.jpg" alt="" height="auto" width="500"></div>
+            <p><strong>Sumber:</strong> https://r.search.yahoo.com/_ylt=AwrO8ljb725n6qA6y3.jzbkF;_ylu=c2VjA2ZwLWF0dHJpYgRzbGsDcnVybA--/RV=2/RE=1735352411/RO=11/RU=https%3a%2f%2fshopclassla.com%2fbest-fiber-optic-modem%2f/RK=2/RS=xi718KcuYmT_jYuGPCq74moTE8Y-</p>
 
             <h3>5. Modem Nirkabel</h3>
             <p>Modem nirkabel terhubung ke jaringan seluler (misalnya, 4G atau 5G) untuk menyediakan akses internet. Modem ini portabel dan sering digunakan untuk internet mobile, seperti pada laptop atau hotspot mobile.</p>
-            <div class="image-placeholder">[Gambar Modem Nirkabel]</div>
-            <p><strong>Sumber:</strong> Tambahkan sumber gambar di sini.</p>
+            <div class="image-placeholder"><img src="modem/depositphotos_52982227-stock-photo-wireless-internet-router.jpg" alt="" height="auto" width="500"></div>
+            <p><strong>Sumber:</strong> https://r.search.yahoo.com/_ylt=AwrO8lgx8G5nF.E62kujzbkF;_ylu=c2VjA2ZwLWF0dHJpYgRzbGsDcnVybA--/RV=2/RE=1735352497/RO=11/RU=https%3a%2f%2fid.depositphotos.com%2f52982227%2fstock-photo-wireless-internet-router.html/RK=2/RS=SUHrtHILWofduIoPPErGRbBE_h0-</p>
 
             <h3>6. Modem Satelit</h3>
             <p>Modem satelit terhubung ke internet melalui komunikasi satelit. Modem ini sering digunakan di daerah terpencil di mana layanan broadband tradisional tidak tersedia. Namun, modem ini memiliki latensi yang lebih tinggi dibandingkan jenis lainnya.</p>
-            <div class="image-placeholder">[Gambar Modem Satelit]</div>
-            <p><strong>Sumber:</strong> Tambahkan sumber gambar di sini.</p>
+            <div class="image-placeholder"><img src="modem/starlink-dish-and-router.jpg" height="auto" width="500" alt=""></div>
+            <p><strong>Sumber:</strong> https://r.search.yahoo.com/_ylt=Awr99nfJ8G5nSRkASE2jzbkF;_ylu=c2VjA2ZwLWF0dHJpYgRzbGsDcnVybA--/RV=2/RE=1735352649/RO=11/RU=https%3a%2f%2farstechnica.com%2finformation-technology%2f2021%2f11%2fstarlink-unveils-2nd-generation-satellite-dish-and-new-wi-fi-router%2f/RK=2/RS=YWJudRTVBsTHSoHonw1dLOz52RM-</p>
 
             <h3>7. Modem USB</h3>
             <p>Modem USB adalah perangkat kecil yang terhubung ke port USB komputer untuk menyediakan akses internet, biasanya melalui jaringan seluler. Modem ini praktis untuk penggunaan saat bepergian.</p>
-            <div class="image-placeholder">[Gambar Modem USB]</div>
-            <p><strong>Sumber:</strong> Tambahkan sumber gambar di sini.</p>
-
+            <div class="image-placeholder"><img src="modem/b20bd0b6-f65f-4f7a-8af4-21bf3f5e346b.jpg._CB317619173_.jpg" alt="" height="auto" width="500"></div>
+            <p><strong>Sumber:</strong> https://r.search.yahoo.com/_ylt=AwrjZf3v8G5n9741dM.jzbkF;_ylu=c2VjA2ZwLWF0dHJpYgRzbGsDcnVybA--/RV=2/RE=1735352687/RO=11/RU=https%3a%2f%2fwww.amazon.co.uk%2fStarTech-com-External-V-92-56K-Modem%2fdp%2fB007019TV8/RK=2/RS=OYpewfTejPJajO3KdjR9OIFFfKo-</p>
+        </section>
 
         <section id="tutorial">
             <h2>Tutorial</h2>
